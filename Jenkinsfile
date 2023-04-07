@@ -10,6 +10,8 @@ pipeline {
             }
             steps {
                 script {
+                
+                    echo "This was changed!!!!!!!!!!!!!!#######################################"
                     
                     withSonarQubeEnv(credentialsId: 'sonar-token') {
                         sh 'chmod +x gradlew'
@@ -25,3 +27,4 @@ pipeline {
     }
 
 }
+
